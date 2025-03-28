@@ -1,46 +1,155 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Rubik+Burned&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Italianno&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet"/>
-        <link href="./css/main.css" rel="stylesheet"/>
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="v1_1178">
-            <div class="v1_1179"></div>
-            <div class="v1_1183"></div>
-            <div class="v4_101">
-                <div class="name"></div>
-            </div>
-            <span class="v1_1236">Stupid</span>
-            <div class="v1_1237"></div>
-            <div class="v4_6"></div>
-            <div class="v4_10"></div>
-            <span class="v4_11">2025</span>
-            <div class="v4_12"></div>
-            <span class="v4_13">Jonny Gor</span>
-            <div class="v4_450">
-                <div class="v4_451"></div>
-                <div class="name"></div>
-            </div>
-            <div class="v4_453">
-                <div class="v4_454"></div>
-                <div class="name"></div>
-            </div>
-            <div class="v4_456">
-                <div class="v4_457">
-                    <div class="v4_458"></div>
-                </div>
-                <div class="name"></div>
-            </div>
-            <div class="v4_460">
-                <div class="v4_461">
-                    <div class="v4_462"></div>
-                </div>
-                <div class="name"></div>
-            </div>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название компании</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #fff;
+            color: #000;
+            line-height: 1.6;
+        }
+        
+        header {
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            animation: pulse 3s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .description {
+            margin: 20px auto;
+            max-width: 600px;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .social-icons {
+            margin: 20px 0;
+        }
+        
+        .social-icons a {
+            color: #000;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: opacity 0.3s;
+        }
+        
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+        
+        nav {
+            margin: 30px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: 1px solid #000;
+            transition: background 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background: #000;
+            color: #fff;
+        }
+        
+        .mission {
+            background: #f5f5f5;
+            padding: 40px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .mission h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Логотип (замените на ваш) -->
+            <img src="logo1.png" alt="Логотип компании">
         </div>
-    </body>
+        
+        <div class="description">
+            <p>Краткое описание вашей компании. Мы занимаемся производством фильмов, организацией мероприятий и предоставлением профессиональных услуг в сфере киноиндустрии.</p>
+        </div>
+        
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Оборудование</a></li>
+            <li><a href="#">Персонал</a></li>
+            <li><a href="#">Анонсы</a></li>
+            <li><a href="#">Трудоустройство</a></li>
+            <li><a href="#">Правила</a></li>
+        </ul>
+    </nav>
+    
+    <section class="mission">
+        <h2>Наши цели</h2>
+        <p>Здесь будет ваш текст о миссии компании. Например: "Мы стремимся создавать качественный контент, развивать киноиндустрию и предоставлять лучшие услуги в сфере производства фильмов."</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Название компании. Все права защищены.</p>
+    </footer>
+</body>
 </html>
